@@ -4,7 +4,7 @@ TARGET = Guia1
 
 all: $(TARGET)
 
-Guia1: Guia1.o
+$(TARGET): Guia1.o
 		$(CC) $(CFLAGS) $^ -o $@
 
 Guia1.o: Guia1.c
